@@ -9,7 +9,7 @@ $Text
 
 
 BEGIN {
-$global:Letters = 0
+$global:Letters = 0 #Initialization
       }
 
 
