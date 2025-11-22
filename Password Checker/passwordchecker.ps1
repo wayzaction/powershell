@@ -16,7 +16,7 @@ until ($birth -match $correctbirth)
 do { $password = Read-Host "Think of a password:"  
    }
 
-#..until user follows the format.
+#..until user follows the criteria.
 until ($password -match $correctpassword)
 
 Write-Host "Account Created."
