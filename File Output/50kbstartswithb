@@ -1,0 +1,12 @@
+# Arrays with criterias
+$array = @()
+$path = "C:\Windows\System32"
+$size = "50KB"
+$name = "b*"
+
+#Get every item in the given directory that follows given criterias
+$array = Get-ChildItem -Path $path | Where-Object { $_.Length -gt $size -and $_.Name -like $name}
+
+foreach ($file in $array) {
+Write-Host "$($file.Name) $($file.Length/1KB)"
+}
