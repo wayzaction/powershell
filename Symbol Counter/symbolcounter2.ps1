@@ -14,7 +14,7 @@ $Text
 BEGIN {
 
 $global:Letters = 0
-Write-Host "String        Length"
+Write-Host "String".PadRight(10),"Length"
 
       }
 
@@ -23,7 +23,7 @@ PROCESS {
 
 $global:Letters = $Text.Length
 
-Write-Host "$Text            $global:Letters"
+Write-Host $Text.PadRight(10) $global:Letters
 
         }
 
