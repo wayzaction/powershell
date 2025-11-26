@@ -9,7 +9,8 @@ Character counter.
 
 .DESCRIPTION
 
-This function is a character counter of inserted words, creating a new row every word for better readability
+This function is a character counter of inserted words, creates a new row every word for better readability
+                                                     and utilizes "SupportsShouldProcess" for confirmations.
 
 
 .EXAMPLE
