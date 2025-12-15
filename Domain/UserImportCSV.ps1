@@ -9,7 +9,7 @@ Import-Csv -Path C:\users.csv | ForEach-Object {
 
     New-ADOrganizationalUnit -Name $_.Unit -Path $DomainSyntax -ProtectedFromAccidentalDeletion $False
     try {
-        New-ADUser -Name $_.FirstName -Enabled $true -GivenName $_.FirstName -Surname $_.LastName -AccountPassword $Pass -Path $OuSyntax -SamAccountName $samAccountName -UserPrincipalName "$samAccountName@it.loc" -ChangePasswordAtLogon:$true
+        New-ADUser -Name $_.FirstName -Enabled $true -GivenName $_.FirstName -Surname $_.LastName -AccountPassword $Pass -Path $OuSyntax -SamAccountName $samAccountName -UserPrincipalName "$samAccountName@it.loc" -ChangePasswordAtLogon:$true -DisplayName $samAccountName
         "$samAccountName created successfully." | Out-File -FilePath $logFilePath -Append
     } catch {
         # Fail
