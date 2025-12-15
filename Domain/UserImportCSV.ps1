@@ -15,7 +15,7 @@ Import-Csv -Path C:\users.csv | ForEach-Object {
 
 # CSV EXAMPLE
 
-#<
+<#
 FirstName,LastName,Password
 Hot,Dog,Kevade123
 Red,Cat,Kevade123
