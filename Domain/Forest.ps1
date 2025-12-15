@@ -1,4 +1,4 @@
-$Domain = Read-Host "Think of a domain name"
+$Domain = Read-Host "Think of a domain name (test.loc)"
 
 Write-Host "Installing ADDS and DNS tools.."
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
